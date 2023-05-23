@@ -4,17 +4,44 @@
 
     </head>
     <body>
-        <div class="top-bar">
-
+        <div id="top-bar-layer">
+            <div id="top-bar-right">
+                <button id="add-barrel"></button>
+                <button id="select-gizmo"></button>
+                <button id="move-gizmo"></button>
+                <button id="rotate-gizmo"></button>
+                <button id="scale-gizmo"></button>
+                <button id="aspect-gizmo"></button>
+                <select id="presets">
+                    <option value="Basic">Basic</option>
+                    <option value="Flank">Flank</option>
+                    <option value="Machine Gun">Machine Gun</option>
+                    <option value="Trapper">Trapper</option>
+                    <option value="Builder">Builder</option>
+                    <option value="Director">Director</option>
+                    <option value="Cruiser">Cruiser</option>
+                    <option value="Necromancer">Necromancer</option>
+                  </select>
+            </div>
+            <div id="top-bar-left">
+                <button id="toggle-code"></button>
+                <button id="settings"></button>
+            </div>
         </div>
-        <div class="code-editor">
-
+        <div id="code-editor-layer">
+            <code id="code-editor" row="400" cols="100"></code>
+            <button id="copy-code"></button>
         </div>
-        <div class="canvas">
-
+        <div id="canvas-layer">
+            <canvas width=1920 height=1080 id="canvas"></canvas>
         </div>
-        <div class="hovering">
-            
+        <div id="hovering-layer">
+            <div id="barrel-bubble">
+                <button id="duplicate-barrel"></button>
+                <button id="view-barrel-code"></button>
+                <button id="delete-barrel"></button>
+            </div>
         </div>
+        <script src="src/main.js"></script>
     </body>
 </html>
