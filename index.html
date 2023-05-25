@@ -9,12 +9,12 @@
     <body>
         <div id="top-bar-layer">
             <div id="top-bar-right">
-                <button id="add-barrel" title="Add Barrel"></button>
-                <button id="select-gizmo" title="Select Gizmo"></button>
-                <button id="move-gizmo" title="Move Gizmo"></button>
-                <button id="rotate-gizmo" title="Rotate Gizmo"></button>
-                <button id="scale-gizmo" title="Scale Gizmo"></button>
-                <button id="aspect-gizmo" title="Aspect Gizmo"></button>
+                <button id="add-barrel" title="Add Barrel" class="icon-button"><img src="assets\Add Gun Icon.svg" class="button-icon"></button>
+                <button id="select-gizmo" title="Select Gizmo" class="icon-button"><img src="assets\Add Gun Icon.svg" class="button-icon"></button>
+                <button id="move-gizmo" title="Move Gizmo" class="icon-button"><img src="assets\Move Icon.svg" class="button-icon"></button>
+                <button id="rotate-gizmo" title="Rotate Gizmo" class="icon-button"><img src="assets\Rotate Icon.svg" class="button-icon"></button>
+                <button id="scale-gizmo" title="Scale Gizmo" class="icon-button"><img src="assets\Scale Icon.svg" class="button-icon"></button>
+                <button id="aspect-gizmo" title="Aspect Gizmo" class="icon-button"><img src="assets\Aspect Icon.svg" class="button-icon"></button>
                 <div class="select-wrap">
                     <label>Presets</label>
                     <select id="presets">
@@ -27,23 +27,23 @@
                         <option value="Cruiser">Cruiser</option>
                         <option value="Necromancer">Necromancer</option>
                         <option value="Spawner">Spawner</option>
-                        <option value="Auto-Turret" data-warning="This is the default auto-turret, to create your own, make a nex export and use it!">Auto-Turret</option>
+                        <option value="Auto-Turret" data-warning="This is the default auto-turret, to create your own, make a new export and use it!">Auto-Turret</option>
                     </select>
                 </div>
             </div>
             <div id="top-bar-left">
-                <button id="toggle-code" title="Toggle Code Panel"></button>
-                <button id="settings" title="Settings"></button>
+                <button id="toggle-code" title="Toggle Code Panel" class="icon-button"><img src="assets\Terminal Icon.svg" class="button-icon"></button>
+                <button id="settings" title="Settings" class="icon-button"><img src="assets\Settings Icon.svg" class="button-icon"></button>
             </div>
         </div>
         <div id="code-editor-layer">
-            <div class="label" data-label="Code Editor">Code Editor</div>
+            Code Editor
             <code id="code-editor" row="400" cols="100"></code>
-            <button id="copy-code" title="Copy Code"></button>
+            <button id="copy-code" title="Copy Code" class="icon-button"><img src="assets\Clipboard icon.svg" class="button-icon"></button>
         </div>
         <div id="left-panel-layer">
             <div id="left-panel-layer-top">
-                <div class="label" data-label="Body">Body</div>
+                Body
                 <label>Custom <input type="checkbox" id="custom-shape"></label>
                 <input type="number" aria-label="shape" placeholder="shape" id="shape">
                 <input type="number" aria-label="size" placeholder="size" id="size">
@@ -51,18 +51,15 @@
             <div id="left-panel-layer-elements">
 
             </div>
-            
-            <code id="code-editor" row="400" cols="100"></code>
-            <button id="copy-code" title="Copy Code"></button>
         </div>
         <div id="canvas-layer">
             <canvas width=1920 height=1080 id="canvas"></canvas>
         </div>
         <div id="hovering-layer">
             <div id="barrel-bubble">
-                <button id="duplicate-barrel" title="Duplicate Barrel"></button>
-                <button id="view-barrel-code" title="View Code"></button>
-                <button id="delete-barrel" title="Delete Barrel"></button>
+                <button id="duplicate-barrel" title="Duplicate Barrel" class="icon-button"><img src="assets\Duplicate Icon.svg" class="button-icon"></button>
+                <button id="view-barrel-code" title="View Code" class="icon-button"><img src="" class="button-icon">View in Code Editor</button>
+                <button id="delete-barrel" title="Delete Barrel" class="icon-button"><img src="assets\Trash Icon.svg" class="button-icon"></button>
             </div>
         </div>
         <script src="main.js"></script>
