@@ -58,17 +58,19 @@ button:hover {
 
 
 .select-wrapper {
-    margin: 10px 0px;
     position: relative;
+    font-size: 16px;
+    line-height: 19px;
+    height: 30px;
 }
 .select-wrapper select {
     display: none;
 }
 .select-selected {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #ECECEC;
   border: 2px solid #000000;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 1px;
+  border-radius: 2px;
 }
 .select-selected:after {
     position: absolute;
@@ -85,11 +87,11 @@ button:hover {
   }
   .select-items {
     position: absolute;
-    background-color: #ffffff;
+    background-color: #ECECEC;
     border: 2px solid #000000;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 1px;
-    top: 100%;
+    border-radius: 2px;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 99;
@@ -104,10 +106,17 @@ button:hover {
 
 
 #left-panel-layer{
+    color: #000000;
+    background: #ECECEC;
     display: flex;
+    position: fixed;
+    left: 0;
+    right: auto;
     flex-shrink: 0;
     height: 100%;
-    width: 260px;
+    width: 15%;
+    flex-direction: column;
+    min-height: 0;
 }
 #code-editor-layer{
     font-family: 'Inter';
@@ -124,7 +133,7 @@ button:hover {
     left: auto;
     flex-shrink: 0;
     height: 100%;
-    width: 500px;
+    width: 30%;
     flex-direction: column;
     min-height: 0;
 }
