@@ -5,12 +5,13 @@
         <title>Arras.io Entity Designer</title>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="top-bar-layer">
             <div id="top-bar-right">
+                <button id="select-gizmo" title="Select Gizmo" class="icon-button"><img src="assets\Cursor Icon.svg" class="button-icon"></button>
                 <button id="add-barrel" title="Add Barrel" class="icon-button"><img src="assets\Add Gun Icon.svg" class="button-icon"></button>
-                <button id="select-gizmo" title="Select Gizmo" class="icon-button"><img src="assets\Add Gun Icon.svg" class="button-icon"></button>
                 <button id="move-gizmo" title="Move Gizmo" class="icon-button"><img src="assets\Move Icon.svg" class="button-icon"></button>
                 <button id="rotate-gizmo" title="Rotate Gizmo" class="icon-button"><img src="assets\Rotate Icon.svg" class="button-icon"></button>
                 <button id="scale-gizmo" title="Scale Gizmo" class="icon-button"><img src="assets\Scale Icon.svg" class="button-icon"></button>
@@ -36,20 +37,22 @@
                 <button id="settings" title="Settings" class="icon-button"><img src="assets\Settings Icon.svg" class="button-icon"></button>
             </div>
         </div>
-        <div id="code-editor-layer">
-            Code Editor
-            <code id="code-editor" row="400" cols="100"></code>
-            <button id="copy-code" title="Copy Code" class="icon-button"><img src="assets\Clipboard icon.svg" class="button-icon"></button>
-        </div>
-        <div id="left-panel-layer">
-            <div id="left-panel-layer-top">
-                Body
-                <label>Custom <input type="checkbox" id="custom-shape"></label>
-                <input type="number" aria-label="shape" placeholder="shape" id="shape">
-                <input type="number" aria-label="size" placeholder="size" id="size">
+        <div id="under-top">
+            <div id="code-editor-layer">
+                Code Editor
+                <code id="code-editor" row="400" cols="100"></code>
+                <button id="copy-code" title="Copy Code" class="icon-button"><img src="assets\Clipboard icon.svg" class="button-icon"></button>
             </div>
-            <div id="left-panel-layer-elements">
+            <div id="left-panel-layer">
+                <div id="left-panel-layer-top">
+                    Body
+                    <label>Custom <input type="checkbox" id="custom-shape"></label>
+                    <input type="number" aria-label="shape" placeholder="shape" id="shape">
+                    <input type="number" aria-label="size" placeholder="size" id="size">
+                </div>
+                <div id="left-panel-layer-elements">
 
+                </div>
             </div>
         </div>
         <div id="canvas-layer">
