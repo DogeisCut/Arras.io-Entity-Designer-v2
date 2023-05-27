@@ -92,15 +92,10 @@ function drawPolygon(context, centerX, centerY, size, shape, angle = 0, inversed
     if (useMiter) context.lineJoin = 'round';
 }
 
-m.l.Ma = document.getElementById("optMiter").checked;
-m.l.nb = document.getElementById("optMiterStars").checked;
-m.l.qb = document.getElementById("optQuadraticStars").checked;
-            
 function drawGun(x, y, size, offset, length, direction, width, aspect, angle, inversedRender) {
-    //TODO: figure out what the fuck 'r.B.get(W).position' means, swapped it out for playerPositionPossibly here
-    let WHAT = playerPositionPossibly,
-        x = x + size * (offset * Math.cos(direction + angle + f) + (length / 2 - WHAT) * Math.cos(angle)),
-        y = y + size * (offset * Math.sin(direction + angle + f) + (length / 2 - WHAT) * Math.sin(angle)),
+    let recoil = 0, //when a gun shoots, it recoils back for like half a second.
+        x = x + size * (offset * Math.cos(direction + angle) + (length / 2 - recoil) * Math.cos(angle)),
+        y = y + size * (offset * Math.sin(direction + angle) + (length / 2 - recoil) * Math.sin(angle)),
         halflength = size * length / 2,
         halfwidthfar = size * width / 2,
         halfwidthclose = halfwidthfar,
