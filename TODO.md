@@ -1,7 +1,7 @@
 # Things we could add
 Not in any particular order.
 
-- Shape Chooser and Editor
+- Shape Chooser and Custom Shape Editor (in SVG Path mode and normal Vertex Array mode)
 - Custom Projectiles and displaying them
 - Rendering Turrets correctly
 - Live Text Definition Editor
