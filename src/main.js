@@ -1,3 +1,5 @@
+'use strict';
+
 let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 
@@ -93,10 +95,10 @@ function drawPolygon(context, centerX, centerY, size, shape, angle = 0, inversed
 }
 
 function drawGun(x, y, size, offset, length, direction, width, aspect, angle, inversedRender) {
-    let recoil = 0, //when a gun shoots, it recoils back for like half a second.
-        x = x + size * (offset * Math.cos(direction + angle) + (length / 2 - recoil) * Math.cos(angle)),
-        y = y + size * (offset * Math.sin(direction + angle) + (length / 2 - recoil) * Math.sin(angle)),
-        halflength = size * length / 2,
+    let recoil = 0; //when a gun shoots, it recoils back for like half a second.
+    x = x + size * (offset * Math.cos(direction + angle) + (length / 2 - recoil) * Math.cos(angle));
+    y = y + size * (offset * Math.sin(direction + angle) + (length / 2 - recoil) * Math.sin(angle));
+    let halflength = size * length / 2,
         halfwidthfar = size * width / 2,
         halfwidthclose = halfwidthfar,
         ax = Math.cos(angle),

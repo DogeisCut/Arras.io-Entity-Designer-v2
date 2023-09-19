@@ -1,0 +1,25 @@
+{
+  "name": "arras.io-entity-designer-v2",
+  "version": "1.0.0",
+  "description": "Design and custom entities for Arras.io and use their code in your servers with this brand new visual editor!",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DogeisCut/Arras.io-Entity-Designer-v2.git"
+  },
+  "author": "DogeisCut",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/DogeisCut/Arras.io-Entity-Designer-v2/issues"
+  },
+  "homepage": "https://github.com/DogeisCut/Arras.io-Entity-Designer-v2#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
