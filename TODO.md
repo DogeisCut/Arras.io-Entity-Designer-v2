@@ -2,9 +2,9 @@
 Not in any particular order.
 
 - Shape Chooser and Custom Shape Editor (in SVG Path mode and normal Vertex Array mode)
-- Custom Projectiles and displaying them
 - Rendering Turrets correctly
 - Live Text Definition Editor
+ - You can add whatever, but anything non visual will be ignored (but kept)
 - Theme Support
 - Placing Props (Pentagons, Basics, Base Floor Tiles, etc.) around the map
 - Camera Control (+/- to Zoom and Arrow keys/WASD to move)

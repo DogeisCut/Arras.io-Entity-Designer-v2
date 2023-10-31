@@ -3,6 +3,28 @@
 let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 
+let tanks = {
+	'genericTank': {META: { HIDDEN: true }, CODE: {
+
+	}},
+	'miniboss': {META: { HIDDEN: true }, CODE: {
+
+	}},
+	'autoTurret': {META: { HIDDEN: true }, CODE: {
+
+	}},
+	'example': {META: {}, CODE: {
+		PARENT: 'genericTank',
+		LABEL: 'Example Tank',
+		GUNS: [
+			{
+				POSITION: [18, 8, 1, 0, 0, 0, 0]
+			}
+		]
+	}}
+}
+
+//probably have to re-grab all this stuff from aps-plus-plus as it's all real old
 let selectedStyle = 'normal',
   color = {
 		normal: {
