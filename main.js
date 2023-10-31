@@ -4,6 +4,9 @@ let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 
 let tanks = {
+	'genericEntity': {META: { HIDDEN: true }, CODE: {
+		
+	}},
 	'genericTank': {META: { HIDDEN: true }, CODE: {
 
 	}},
