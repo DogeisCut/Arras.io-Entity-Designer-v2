@@ -27,6 +27,8 @@ let tanks = {
 	}}
 }
 
+//e
+
 //probably have to re-grab all this stuff from aps-plus-plus as it's all real old
 let selectedStyle = 'normal',
   color = {
